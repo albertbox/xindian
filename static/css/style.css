@@ -1,0 +1,192 @@
+body {
+    font-family: 'Helvetica', 'Arila', '微軟正黑體', 'sans-serif';
+    font-size: small;
+    height: 100%;
+}
+
+input, select {
+    box-sizing: border-box;
+}
+
+/*
+Remove the navbar's default margin-bottom and rounded borders
+*/ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+    
+/*
+Set height of the grid so .sidenav can be 100% (adjust as needed)
+*/
+.row.content {
+    height: 100%;
+}
+
+/*
+Main Block, Set gray background color and 100% height
+*/
+.main-block {
+    background-color: #F1F1F1;
+    height: 100%;
+}
+
+/*
+Side Block
+*/
+.sidenav {
+    padding-top: 20px;
+    height: 100%;
+}
+
+/*
+Definition of Table for Events List
+*/
+#event-img {
+    height: calc(100% - 200px);
+    /*height: 430px;*/
+    /*min-height: 300px;*/
+    min-height: calc(100% - 200px);
+    /*min-height: 430px;*/
+    padding-bottom: 20px;
+}
+/*
+#img_display {
+    margin: 0 auto;
+    float: none;
+}
+*/
+/*
+Blank Line...
+*/
+.blank-line {
+    height: 15px;
+    background-color: #FFFFFF;
+}
+
+.left-blank {
+    margin-left: 10px;
+}
+
+/*
+Definition of TThumbnail
+*/
+#map_thumbnail {
+    margin:0px auto;
+    width: 200px;
+    /*height: 120px;*/
+    border: 2px #CCC solid;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#view_thumbnail {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    border: 1px #0000FF solid;
+}
+/*
+Definition of Table for General Purpose
+*/
+
+.div-events thead,
+.div-events tbody,
+.div-events tr,
+.div-events td,
+.div-events th {
+    display: block;
+}
+
+.div-events tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+/*
+Definition of Table for Events List
+*/
+#tbl-events {
+    width: 100%;
+    margin-bottom: 4px;
+}
+#tbl-events > thead > tr > td {
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+#tbl-events tbody {
+    height: 105px;
+    overflow-y: auto;
+}
+#tbl-events > tbody > tr > td {
+    padding: 1px;
+}
+#tbl-events tbody td, #tbl-events thead th {
+    /*width: 19.2%;*/
+    float: left;
+}
+
+/*
+Definition of Fields for Events Table
+*/
+.event-data-col-1 {
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    margin-right: 2px;
+}
+.event-data-col-2 {
+    width: 100px;
+    /*min-width: 120px;*/
+    max-width: 120px;
+}
+.event-data-col-3 {
+    width: 160px;
+    /*min-width: 180px;*/
+    max-width: 180px;
+}
+
+.event-head {
+    padding-top: 10px;
+    font-weight: bold;
+}
+.event-head-last {
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+/*
+Definition of Table for General Purpose
+*/
+.redLevel {
+    background-color: #FF0000;
+}
+.orangeLevel {
+    background-color: #FFA500;
+}
+.yellowLevel {
+    background-color: #FFFF00;
+}
+
+#divReport {
+    width: 98%;
+    height: 430px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+
+#bodyReport > thead > tr > th,
+#bodyReport > tbody > tr > td {
+    text-align: center;
+}

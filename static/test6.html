@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--div>
+        <img id="map" src="images/Map.jpg">
+    </div-->
+    <!--div style="width:500px; height:500px; overflow: scroll; float: left;">
+        <canvas id="myCanvas" style="width:500px; height:500px; display:block;"></canvas>
+    </div-->
+        <canvas id="myCanvas" style="width:500px; height:500px; display:block;"></canvas>
+    <div>AABBCC<br>XXYYZZ</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function() {
+        var img = document.createElement('img');
+        img.src='images/Map.jpg';
+        img.onload = function () {
+            var c = document.getElementById('myCanvas');
+            var ctx = c.getContext('2d');
+            ctx.drawImage(img,90,130,50,60,10,10,50,60);
+        };
+        /*
+        var mapParkGarage = new Image();
+        mapParkGarage.src = 'images/Map.jpg';
+        mapParkGarage.onload = function() {
+            //$("#myCanvas").css("width", mapParkGarage.width);
+            //$("#myCanvas").css("height", mapParkGarage.height);
+            //$("#myCanvas").css("background-image", "url('images/Map.jpg')");
+
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.drawImage(map, 0, 0, 500, 500, 0, 0, 500, 500);
+            //ctx.webkitImageSmoothingEnabled=true;
+            //ctx.fillStyle = "#AAAAAA";
+            //ctx.beginPath();
+            //ctx.arc(20, 15, 4, 0, 2*Math.PI, false);
+            //ctx.closePath();
+            //ctx.stroke();
+            //ctx.fill();
+        }
+        */
+
+        $("#myCanvas").on("dblclick", function(e) {
+            console.log(e);
+        })
+    });
+
+//Ref:http://stackoverflow.com/questions/21762534/how-to-smooth-out-edges-of-circles-drawn-in-canvas-with-arc
+</script>
+</html>
